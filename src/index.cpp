@@ -13,7 +13,7 @@ int main() {
 
     if(obtainMarks <= totalMarks){
         percent = 100*float(obtainMarks) / float(totalMarks);
-    }else{
+    }else {
         cout<<"Incorrect obtain Marks";
     }
     if(percent > 0){
@@ -23,11 +23,34 @@ int main() {
             cout<<"Your GPA is: "<< gpa<< endl;
             cout<<"Your Grade is \"A+\" "<<endl;
             cout<<"Your Percentage is: "<< percent<<endl;
-        } else if((percent >= 85) && (percent <= 89.99)){
+        }
+         else if((percent >= 85) && (percent <= 89.99)){
 
             gpa = 4.00;
             cout<<"Your GPA is: "<< gpa<< endl;
             cout<<"Your Grade is \"A\" "<< endl;
+            cout<<"Your Percentage is: "<< percent<< endl;
+        }
+         else if((percent >= 80) && (percent <= 84.99)){
+
+            gpa = (percent*3.66) / 80;
+            cout<<"Your GPA is: "<< gpa<< endl;
+            cout<<"Your Grade is \"A-\" "<< endl;
+            cout<<"Your Percentage is: "<< percent<< endl;
+
+        }
+         else if((percent >= 75) && (percent <= 79.99)){
+
+            gpa = (percent*3.33) / 75;
+            cout<<"Your GPA is: "<< gpa<< endl;
+            cout<<"Your Grade is \"B+\" "<< endl;
+            cout<<"Your Percentage is: "<< percent<< endl;
+        }
+         else if((percent >= 75) && (percent <= 79.99)){
+
+            gpa = (percent*3.33) / 75;
+            cout<<"Your GPA is: "<< gpa<< endl;
+            cout<<"Your Grade is \"B+\" "<< endl;
             cout<<"Your Percentage is: "<< percent<< endl;
         }
     }
